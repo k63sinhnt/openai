@@ -1,0 +1,14 @@
+import openai
+openai.api_key = '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'
+completion = openai.ChatCompletion.create(
+    model="gpt-3.5-turbo",
+    messages=[{"role": "user", "content": "Hãy đề xuất 5 chủ đề tiểu luận cho môn học git và github"}]
+)
+print(completion['choices'][0]['message']['content'])
+
+
+1. Sử dụng Git và Github để quản lý dự án phần mềm cho các công ty khởi nghiệp.
+2. Xây dựng hệ thống kiểm soát phiên bản cho các đề tài nghiên cứu khoa học bằng Git và Github.
+3. Sử dụng Git và Github trong quản lý dự án dịch vụ công nghệ thông tin.
+4. Các công cụ tối ưu hóa tính năng chia sẻ mã nguồn mở bằng Git và Github.
+5. Quản lý dự án phần mềm hiệu quả với Git và Github: Khám phá chi tiết tên lửa của Git và Github.
